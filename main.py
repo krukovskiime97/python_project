@@ -1,9 +1,15 @@
-class SomeClass(object):
-    attr = 41
+class Car:
 
-    def method_1(self, x: int):
-        print(2 * x)
+    def __init__(self, name: object, make: object, model: object) -> object:
+        self.name = name
+        self.make = make
+        self.model = model
+        Car.car_count += 1
 
-obj = SomeClass()
-obj.method_1(6)
-print(obj.attr)
+    def start(self):
+        print("Engine is running")
+
+car_a = Car(name='Toyota', make= 'Corolla' , model = '2015')
+car_a.start()
+print(car_a.name)
+print(car_a.car_count)
