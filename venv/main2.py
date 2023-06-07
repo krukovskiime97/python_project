@@ -1,20 +1,20 @@
-class Compucter:
+class English:
 
-    def __init__(self):
-        self.price = 900
-
-    def get_price(self):
-        print(f"Price {self.price}")
-
-    def set_price(self, price):
-        if price > 1500:
-            price('invalid price')
-        else:
-             self.price = price
+    def greeting(self):
+        print('Hello!')
 
 
-comp = Compucter()
-comp.get_price()
+class Franch:
 
-comp.set_price(1000)
-comp.get_price()
+    def greeting(self):
+        print('Bounjur')
+
+
+eng = English()
+fr = Franch()
+
+language = [eng, fr]
+
+
+for lang in language:
+    lang.greeting()
