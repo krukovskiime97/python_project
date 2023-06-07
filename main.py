@@ -1,8 +1,9 @@
-def function(a , b):
-    return (a + b)
+class SomeClass(object):
+    attr = 41
 
-def diff(a , b):
-    return (a - b)
+    def method_1(self, x: int):
+        print(2 * x)
 
-print(function(40, 15))
-print(diff(75, 12))
+obj = SomeClass()
+obj.method_1(6)
+print(obj.attr)
