@@ -1,20 +1,12 @@
-class English:
+a = int(input("enter a:"))
+b = int(input("enter b:"))
 
-    def greeting(self):
-        print('Hello!')
+try:
+    if b == 0:
+        raise ZeroDivisionError
+    else:
+        print(a / b)
+except ZeroDivisionError as e:
+    print("ZDE error")
 
-
-class Franch:
-
-    def greeting(self):
-        print('Bounjur')
-
-
-eng = English()
-fr = Franch()
-
-language = [eng, fr]
-
-
-for lang in language:
-    lang.greeting()
+print('The end')
